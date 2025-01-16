@@ -29,11 +29,11 @@ async def quiz_1(message: types.Message):
 
 async def quiz_2(call: types.CallbackQuery):
     question = 'Dota2 or CS GO'
-    answer = ['Dota2', 'CS.GO']
+    answer = ['Dota2', 'CS GO']
 
     await bot.send_poll(
-        chat_id=call.from_user.id,   #Куда отправить
-        question=question,           #Сам вопрос
+        chat_id=call.from_user.id,   # Куда отправить
+        question=question,           # Сам вопрос
         options=answer,              # Ответы
         is_anonymous=True,           # Анонимный или нет
         type='quiz',                 # Тип опросника
