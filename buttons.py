@@ -14,5 +14,9 @@ start = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).add(
 
 submit = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2, one_time_keyboard=True).add(KeyboardButton('да'), KeyboardButton('нет'))
 
+cancel = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2,
+                             one_time_keyboard=True).add(KeyboardButton('отмена'))
+
+
 #удаление кнопки из интерфейса
 remove_keyboard = ReplyKeyboardRemove()
