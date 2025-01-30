@@ -37,6 +37,7 @@ async def sql_insert_detail(product_id, category, info_product):
     db.commit()
 
 
+
 # CRUD - 1
 #====================================================================
 def get_db_connection():
